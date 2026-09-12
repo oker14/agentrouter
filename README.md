@@ -1,6 +1,16 @@
-# AgentRouter — AI API, Model Routing & AI Coding Agents
+# AgentRouter — $125 Free AI API Credits, AI Model Routing & API Guide
 
-**AgentRouter** is an AI API and model routing platform that provides access to multiple large language models (LLMs) through unified APIs. This repository is an independent reference for developers looking for **AgentRouter API**, **AI model routing**, **OpenAI-compatible APIs**, **Anthropic-compatible APIs**, **AI coding agents**, and integrations with tools such as **Codex, Claude Code, Cline, Cursor, GitHub Copilot, OpenCode, Qwen Code, and other AI development tools**.
+**AgentRouter** is an AI API and model routing platform providing access to multiple large language models (LLMs) through unified APIs.
+
+This guide explains **what AgentRouter is, how AgentRouter's $125 promotional funds work, GitHub account eligibility, AgentRouter API access, OpenAI-compatible APIs, Anthropic-compatible APIs, and AI coding-agent integrations.**
+
+## AgentRouter $125 Promotional Funds
+
+Eligible users may receive **$125 in AgentRouter promotional funds** when signing up through an eligible registration.
+
+GitHub account age may be part of the eligibility requirements. Check the current promotion terms for the exact requirements.
+
+[https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
 
 > **Referral disclosure:** This repository contains an AgentRouter referral link. Using the referral link may provide referral benefits according to AgentRouter's current referral program terms.
 
