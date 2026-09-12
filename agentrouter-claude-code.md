@@ -4,9 +4,9 @@ This page is an independent reference for developers looking for information abo
 
 AgentRouter API Endpoint
 
-The AgentRouter API endpoint is:
+The AgentRouter API endpoint for Claude Models is:
 
-https://agentrouter.org/v1/
+https://agentrouter.org/
 
 This endpoint is used for API requests and compatible AI coding integrations.
 
@@ -18,7 +18,7 @@ AgentRouter can be used with AI coding workflows that support custom API provide
 
 When configuring Claude Code with AgentRouter, use the API endpoint supported by AgentRouter's current documentation:
 
-https://agentrouter.org/v1/
+https://agentrouter.org/
 
 The exact Claude Code configuration can vary depending on the Claude Code version and the compatibility method being used.
 
@@ -77,11 +77,11 @@ Endpoint Configuration
 
 The AgentRouter API endpoint is:
 
-https://agentrouter.org/v1/
+https://agentrouter.org/
 
 The registration/referral URL is separate:
 
-agentrouter.org
+[agentrouter.org](https://agentrouter.org/register?aff=TNCH)
 
 Do not use the registration URL as an API endpoint.
 
@@ -95,7 +95,7 @@ The registration link contains a referral parameter.
 
 Official Resources
 AgentRouter: [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
-API: https://agentrouter.org/v1/
+API: https://agentrouter.org/
 Documentation: https://agentrouter.org/docs/index.html
 Related References
 AgentRouter API
