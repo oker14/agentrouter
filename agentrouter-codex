@@ -1,0 +1,103 @@
+AgentRouter + OpenAI Codex
+
+This page is an independent reference for developers looking for information about AgentRouter with OpenAI Codex, OpenAI-compatible APIs, AI coding agents, and custom API endpoints.
+
+AgentRouter API Endpoint
+
+The AgentRouter API endpoint is:
+
+https://agentrouter.org/v1/
+
+This endpoint is used for API requests and OpenAI-compatible integrations.
+
+AgentRouter documentation: https://agentrouter.org/docs/index.html
+
+AgentRouter + Codex
+
+AgentRouter can be used with AI coding workflows that support custom OpenAI-compatible API endpoints.
+
+For Codex configurations that support a custom API endpoint, the AgentRouter API endpoint is:
+
+https://agentrouter.org/v1/
+
+The exact configuration method depends on the version of Codex being used. Configuration options can change between releases, so use the current Codex and AgentRouter documentation for the exact setup.
+
+OpenAI-Compatible API
+
+AgentRouter provides an OpenAI-compatible API through:
+
+https://agentrouter.org/v1/
+
+This allows compatible applications to send requests through AgentRouter using an OpenAI-style API interface.
+
+The exact model identifier must match a model currently supported by AgentRouter.
+
+Model Selection
+
+When using AgentRouter with Codex, select a model that AgentRouter currently supports.
+
+Model availability and model identifiers can change over time.
+
+Before configuring a model, check AgentRouter's current documentation for:
+
+Supported models
+Model identifiers
+Context limits
+Pricing
+Availability
+API compatibility
+API Key Security
+
+Treat your AgentRouter API key as sensitive information.
+
+Never:
+
+Commit API keys to public GitHub repositories
+Put API keys directly into public source code
+Share API keys in screenshots
+Post API keys in GitHub issues
+Upload API keys to public websites
+
+If an API key is accidentally exposed, revoke or rotate it as soon as possible.
+
+Troubleshooting
+Authentication Errors
+
+If Codex cannot authenticate, check:
+
+The API key is valid.
+The API key has not been revoked.
+The configured API endpoint is correct.
+Your Codex version supports the configuration method being used.
+Model Errors
+
+If a model is rejected, verify that the model identifier is currently supported by AgentRouter.
+
+Do not assume that a model available through another provider is automatically available through AgentRouter.
+
+Endpoint Errors
+
+Make sure the API endpoint is:
+
+https://agentrouter.org/v1/
+
+The registration URL is separate and should not be used as an API endpoint.
+
+Registration
+
+Eligible users can review the current AgentRouter service here:
+
+[agentrouter.org](https://agentrouter.org/register?aff=TNCH)
+
+The registration link contains a referral parameter.
+
+Official Resources
+AgentRouter: [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
+API: https://agentrouter.org/v1/
+Documentation: https://agentrouter.org/docs/index.html
+Related References
+AgentRouter API
+AgentRouter Promotional Funds
+AgentRouter + Claude Code
+
+Disclosure: This is an independent community reference and is not the official AgentRouter repository. The registration link above contains a referral parameter.
