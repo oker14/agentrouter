@@ -1,525 +1,239 @@
-# AgentRouter — AI API & Model Routing Reference
+# AgentRouter — AI API, Model Routing & AI Coding Agents
 
-**Independent reference for AgentRouter, AI model routing, AI APIs, OpenAI-compatible APIs, Anthropic-compatible APIs, AI coding agents, model access, and developer integrations.**
+**AgentRouter** is an AI API and model routing platform that provides access to multiple large language models (LLMs) through unified APIs. This repository is an independent reference for developers looking for **AgentRouter API**, **AI model routing**, **OpenAI-compatible APIs**, **Anthropic-compatible APIs**, **AI coding agents**, and integrations with tools such as **Codex, Claude Code, Cline, Cursor, GitHub Copilot, OpenCode, Qwen Code, and other AI development tools**.
 
-> **Disclosure:** This is an independent reference and is not the official AgentRouter repository. This repository contains a referral link. If you register through the referral link, the repository owner may receive a referral benefit.
+> **Referral disclosure:** This repository contains an AgentRouter referral link. Using the referral link may provide referral benefits according to AgentRouter's current referral program terms.
 
----
+## AgentRouter
 
-## What is AgentRouter?
+**Website:** [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
+**Documentation:** https://agentrouter.org/docs/index.html
+**Registration:** https://agentrouter.org/register?aff=TNCH
 
-**AgentRouter** is an AI API and **AI model routing platform** designed to provide access to multiple AI models through a unified API.
+AgentRouter provides a unified API for working with multiple AI models without requiring a separate API integration for every model provider.
 
-AgentRouter provides integrations for AI coding agents, developer tools, and applications that need access to different large language models (LLMs).
+### Why use AgentRouter?
 
-The platform supports **OpenAI-compatible** and **Anthropic-compatible** API protocols, allowing compatible applications to connect to AgentRouter without requiring a completely separate integration for every supported model.
+AgentRouter can be useful when you want:
 
-AgentRouter's documentation currently provides integration guides for multiple AI agents and developer tools, including **Claude Code, Codex, Cline, Roo Code, Kilo Code, GitHub Copilot, OpenCode, Qwen Code, Crush, Hermes Agent, Cursor, Trae, Claude Desktop, and Craft Agents**.
-
----
-
-# AgentRouter at a glance
-
-| Category              | Information                                                    |
-| --------------------- | -------------------------------------------------------------- |
-| Service               | AgentRouter                                                    |
-| Category              | AI API / AI model router                                       |
-| Primary purpose       | AI model access and API routing                                |
-| Website               | https://agentrouter.org/                                       |
-| Documentation         | https://agentrouter.org/docs/index.html                        |
-| OpenAI-compatible API | `https://agentrouter.org/v1/`                                  |
-| Authentication        | AgentRouter API key                                            |
-| API protocols         | OpenAI-compatible and Anthropic-compatible                     |
-| Target users          | Developers, AI agents, coding agents, teams, and organizations |
-| Model availability    | Depends on current AgentRouter resources and model pool        |
-| Model switching       | Supported through model configuration                          |
-
-**Important:** Model availability, pricing, API endpoints, model IDs, and service features can change. Always verify current information against the official AgentRouter documentation.
+* Access to multiple AI models through one API
+* OpenAI-compatible API access
+* Anthropic-compatible API access
+* AI model routing
+* AI coding agent integrations
+* Model switching without rewriting applications
+* Centralized API keys
+* Usage and cost management
+* Model availability across different AI providers
+* Integration with coding assistants and developer tools
 
 ---
 
 # AgentRouter API
 
+AgentRouter supports API access designed to work with common AI SDKs and developer tools.
+
 ## OpenAI-compatible API
 
-The current AgentRouter OpenAI-compatible API endpoint is:
+The current OpenAI-compatible API endpoint is:
 
 ```text
 https://agentrouter.org/v1/
 ```
 
-A compatible application generally requires:
+This allows applications and tools that support OpenAI-compatible APIs to connect to AgentRouter.
+
+Typical configuration concepts include:
 
 ```text
+API Key: Your AgentRouter API key
 Base URL: https://agentrouter.org/v1/
-API Key: <your AgentRouter API key>
-Model: <supported model ID>
+Model: The AgentRouter model ID you want to use
 ```
 
-The exact configuration depends on the application or SDK.
+Always check the official AgentRouter documentation for the currently supported models, parameters, and API configuration.
 
-### Generic OpenAI-compatible configuration
+## Anthropic-compatible API
 
-```text
-Provider:
-OpenAI Compatible
+AgentRouter also provides an Anthropic-compatible API interface for compatible applications and agents.
 
-Base URL:
-https://agentrouter.org/v1/
-
-API Key:
-<your AgentRouter API key>
-
-Model:
-<supported AgentRouter model>
-```
-
----
-
-# Anthropic-compatible API
-
-AgentRouter also supports an **Anthropic-compatible API protocol** for compatible Claude-family integrations.
-
-Anthropic-compatible and OpenAI-compatible configurations use different API formats and endpoints.
-
-**Do not mix the two protocols.**
-
-For the latest Anthropic-compatible endpoint and configuration, use the current AgentRouter documentation:
+See the official documentation for the current Anthropic endpoint and configuration:
 
 https://agentrouter.org/docs/index.html
 
 ---
 
-# How AgentRouter Works
-
-A simplified AI model routing architecture looks like:
-
-```text
-┌─────────────────────────┐
-│     AI Agent / App      │
-└────────────┬────────────┘
-             │
-             │ API request
-             ▼
-┌─────────────────────────┐
-│       AgentRouter       │
-│                         │
-│    API / Model Routing  │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│      Selected Model     │
-│                         │
-│ GPT / Claude / GLM /    │
-│ Kimi / Other Models     │
-└─────────────────────────┘
-```
-
-Instead of integrating every model provider independently, an application can use a compatible AgentRouter API endpoint and select a supported model.
-
----
-
-# Why Use an AI Model Router?
-
-Applications that directly integrate multiple AI providers may need separate:
-
-* API integrations
-* API keys
-* Base URLs
-* Model identifiers
-* SDK configurations
-* Billing arrangements
-* Provider-specific implementations
-
-An AI model router can provide a common API interface for supported models.
-
-Potential benefits include:
-
-* Access to multiple AI models
-* One API integration
-* Easier model switching
-* Centralized API credentials
-* Centralized usage measurement
-* Support for multiple AI coding agents
-* Easier experimentation with different models
-* Reduced provider-specific configuration
-
-Actual capabilities depend on the AgentRouter account, model, API protocol, and client application.
-
----
-
 # AI Coding Agents Supported by AgentRouter
 
-AgentRouter's documentation provides integration guides for numerous AI coding agents and developer tools.
+AgentRouter can be used with a variety of AI coding agents, IDE assistants, terminal agents, and developer applications.
 
-## VS Code and editor integrations
+Examples include:
 
-* **Claude Code for VS Code**
-* **Cline**
-* **Roo Code**
-* **Kilo Code**
-* **GitHub Copilot**
+### Terminal / CLI AI Coding Agents
 
-## CLI and terminal AI agents
+* OpenAI Codex
+* Claude Code CLI
+* OpenCode
+* Qwen Code
+* Crush
+* Hermes Agent
 
-* **Claude Code CLI**
-* **Codex**
-* **OpenCode**
-* **Qwen Code**
-* **Crush**
-* **Hermes Agent**
+### IDE / Editor AI Tools
 
-## Desktop AI applications
+* Cursor
+* Cline
+* Roo Code
+* Kilo Code
+* GitHub Copilot
+* Claude Code for VS Code
 
-* **Claude Desktop**
-* **Trae**
-* **Cursor**
-* **Craft Agents**
+### Desktop AI Applications
 
-The exact configuration depends on the application and API protocol.
+* Claude Desktop
+* Trae
+* Craft Agents
+
+Compatibility and available configuration options can change over time. Check AgentRouter's current documentation before configuring a specific application.
 
 ---
 
-# AgentRouter + Codex
+# AgentRouter + OpenAI Codex
 
-AgentRouter provides an OpenAI-compatible integration for **Codex**.
+AgentRouter can be configured as an OpenAI-compatible API endpoint for **Codex** and other OpenAI-compatible clients.
 
-A typical configuration uses:
+Typical configuration:
 
 ```text
-Model:
-<supported AgentRouter model>
-
-Provider:
-AgentRouter
-
 Base URL:
 https://agentrouter.org/v1/
 
 API Key:
-<your AgentRouter API key>
+Your AgentRouter API key
+
+Model:
+Your selected AgentRouter model
 ```
 
-The model ID should be selected from the models currently available to the AgentRouter account.
+This allows Codex-compatible clients to communicate with models available through AgentRouter.
 
 ---
 
 # AgentRouter + Claude Code
 
-Claude Code can use an Anthropic-compatible AgentRouter configuration.
+AgentRouter can also be used with **Claude Code** through its compatible API configuration.
 
-A typical configuration requires:
+The exact environment variables and endpoint depend on whether you are using Claude Code CLI, Claude Code for VS Code, or another Claude-compatible client.
 
-```text
-API Key:
-<your AgentRouter API key>
+Check the current AgentRouter documentation for the latest configuration:
 
-Base URL:
-<current AgentRouter Anthropic-compatible endpoint>
-
-Model:
-<supported Claude model>
-```
-
-Use the current AgentRouter documentation for the exact endpoint and configuration.
+https://agentrouter.org/docs/index.html
 
 ---
 
 # AgentRouter + Cline
 
-AgentRouter documents both **Anthropic-compatible** and **OpenAI-compatible** Cline configurations.
+**Cline** can be configured to use compatible external AI API providers.
 
-### OpenAI-compatible configuration
+AgentRouter can provide the API endpoint and model access while Cline acts as the coding-agent interface.
+
+Typical configuration concepts include:
 
 ```text
-API Provider:
-OpenAI Compatible
-
-Base URL:
-https://agentrouter.org/v1/
-
-API Key:
-<your AgentRouter API key>
-
-Model:
-<supported model>
+API Provider: OpenAI-compatible provider
+Base URL: https://agentrouter.org/v1/
+API Key: Your AgentRouter API key
+Model: Your selected model
 ```
-
-### Anthropic-compatible configuration
-
-Use the Anthropic provider and the current AgentRouter Anthropic-compatible endpoint.
-
-**The two protocols should not be mixed.**
 
 ---
 
 # AgentRouter + Roo Code
 
-Roo Code supports custom provider configurations.
+**Roo Code** is another AI coding environment that can work with compatible API providers.
 
-AgentRouter's documentation provides both:
-
-* Anthropic-compatible configuration
-* OpenAI-compatible configuration
-
-Using separate profiles can make it easier to switch between protocols and models.
+AgentRouter can be used as the API backend while Roo Code provides the coding-agent interface.
 
 ---
 
 # AgentRouter + Kilo Code
 
-Kilo Code supports custom providers.
+**Kilo Code** supports external model/API configurations, allowing compatible AI models to be accessed through AgentRouter.
 
-A general OpenAI-compatible configuration is:
-
-```text
-Provider ID:
-agentrouter
-
-Display Name:
-AgentRouter
-
-Base URL:
-https://agentrouter.org/v1/
-
-API Key:
-<your AgentRouter API key>
-
-Model:
-<supported model>
-```
-
----
-
-# AgentRouter + GitHub Copilot
-
-AgentRouter's documentation provides custom endpoint configuration for GitHub Copilot.
-
-Two API formats are documented:
-
-### Claude models
-
-```text
-API Type:
-Messages
-```
-
-### OpenAI-compatible models
-
-```text
-API Type:
-Chat Completions
-```
-
-The API format must match the selected model and endpoint.
-
----
-
-# AgentRouter + OpenCode
-
-OpenCode can use an OpenAI-compatible custom provider.
-
-A general configuration includes:
-
-```text
-Provider:
-AgentRouter
-
-Base URL:
-https://agentrouter.org/v1/
-
-API Key:
-<your AgentRouter API key>
-
-Model:
-<supported model>
-```
-
----
-
-# AgentRouter + Qwen Code
-
-Qwen Code can be configured using OpenAI-compatible environment variables:
-
-```text
-OPENAI_API_KEY=<AgentRouter API Key>
-OPENAI_BASE_URL=https://agentrouter.org/v1/
-OPENAI_MODEL=<supported model>
-```
-
----
-
-# AgentRouter + Crush
-
-Crush supports OpenAI-compatible custom providers.
-
-A general configuration includes:
-
-```text
-Provider type:
-openai-compat
-
-Base URL:
-https://agentrouter.org/v1/
-
-API key:
-<AgentRouter API key>
-
-Model:
-<supported AgentRouter model>
-```
-
----
-
-# AgentRouter + Hermes Agent
-
-Hermes Agent supports OpenAI-compatible providers.
-
-A typical configuration requires:
-
-```text
-Provider:
-OpenAI Compatible
-
-Base URL:
-https://agentrouter.org/v1/
-
-API Key:
-<AgentRouter API key>
-
-Model:
-<supported model>
-```
+Use AgentRouter's current documentation for the latest endpoint and model configuration.
 
 ---
 
 # AgentRouter + Cursor
 
-AgentRouter documents an OpenAI-compatible Cursor integration.
+**Cursor** can be configured with compatible external AI API endpoints.
 
-The general configuration uses:
+AgentRouter can act as the API backend while Cursor provides the IDE and coding-agent experience.
+
+Configuration depends on Cursor's current API settings and the model being used.
+
+---
+
+# AgentRouter + GitHub Copilot
+
+AgentRouter documentation also describes compatibility with **GitHub Copilot** configurations using supported API interfaces.
+
+Supported capabilities and configuration requirements can change as both services are updated.
+
+---
+
+# AgentRouter + OpenCode
+
+**OpenCode** can use compatible AI API providers and models.
+
+AgentRouter can therefore be used as an API backend for OpenCode when the selected configuration and model are supported.
+
+---
+
+# AgentRouter + Qwen Code
+
+Qwen Code can be configured using OpenAI-compatible environment variables.
+
+Typical concepts include:
 
 ```text
-OpenAI API Key:
-<AgentRouter API key>
+OPENAI_API_KEY
+OPENAI_BASE_URL
+OPENAI_MODEL
+```
 
-Override OpenAI Base URL:
+For AgentRouter, the current OpenAI-compatible base URL is:
+
+```text
 https://agentrouter.org/v1/
 ```
 
-Cursor's own limitations can affect custom model selection, so users should verify their current Cursor version and AgentRouter documentation.
+---
+
+# AgentRouter + Other AI Agents
+
+AgentRouter can also be relevant to other applications supporting OpenAI-compatible or Anthropic-compatible APIs.
+
+Examples include:
+
+* Crush
+* Hermes Agent
+* Trae
+* Claude Desktop
+* Craft Agents
+* Other OpenAI-compatible AI agents
+* Other Anthropic-compatible AI agents
+* Custom AI applications
+* Custom LLM clients
+
+The important requirement is API compatibility. Always verify the application's current configuration options and AgentRouter's current documentation.
 
 ---
 
-# AgentRouter + Trae
-
-Trae supports custom model configurations using different API formats.
-
-### Anthropic Messages
-
-Used for compatible Claude-family models.
-
-### OpenAI Completions
-
-Used for OpenAI-compatible models.
-
-The selected API format must correspond to the endpoint and model.
-
----
-
-# AgentRouter + Claude Desktop
-
-AgentRouter's documentation provides a gateway-based integration for Claude Desktop.
-
-The configuration requires an AgentRouter gateway endpoint and API key.
-
-Follow the current official documentation for the exact setup.
-
----
-
-# AgentRouter + Craft Agents
-
-Craft Agents supports custom providers using:
-
-* Anthropic-compatible protocol
-* OpenAI-compatible protocol
-
-Select the protocol that corresponds to the model being used.
-
----
-
-# AgentRouter API Key
-
-AgentRouter uses API keys to authenticate API requests.
-
-**Never publish an AgentRouter API key in a public GitHub repository.**
-
-Do not commit:
-
-```text
-AGENTROUTER_API_KEY="your-real-api-key"
-```
-
-Use an environment variable or secret manager instead:
-
-```text
-AGENTROUTER_API_KEY=<your API key>
-```
-
-If an API key is accidentally exposed publicly, revoke or rotate it immediately.
-
----
-
-# One AgentRouter API Key for Multiple AI Agents
-
-AgentRouter's documentation states that an API key is not bound to a specific Agent.
-
-The same API key can therefore be used across supported AI agents, with usage centrally measured.
-
-For example:
-
-```text
-Claude Code ─┐
-Codex       ─┤
-Cline       ─┼──► AgentRouter API
-Roo Code    ─┤
-OpenCode    ─┘
-```
-
-Different agents can be configured to use different models.
-
----
-
-# Switching AI Models
-
-A supported AgentRouter integration can switch models by changing the configured **model ID**.
-
-For example:
-
-```text
-model = "model-a"
-```
-
-can be changed to:
-
-```text
-model = "model-b"
-```
-
-provided that the selected model is currently available to the account.
-
-Different AI coding agents can also use different models while sharing the same AgentRouter API key.
-
----
-
-# Available AI Models
+# AI Models Available Through AgentRouter
 
 AgentRouter's available model pool can change over time.
 
-The current documentation indicates that available models can depend on the resources associated with an API key.
-
-Examples of model IDs currently appearing in AgentRouter's documentation include:
+Examples of model IDs documented for AgentRouter include:
 
 ```text
 gpt-5.5
@@ -532,174 +246,192 @@ claude-opus-4-8
 step3p5-code-alpha
 ```
 
-These examples **do not guarantee availability for every account**.
+**Important:** Model availability may depend on the account, API resources, and AgentRouter's current model pool.
 
-Always check the current AgentRouter model list before configuring a model.
+Do not assume that every model listed above is permanently available.
 
----
+For the latest model availability, consult:
 
-# GPT, Claude, GLM, and Kimi Models
-
-AgentRouter documentation currently references models from multiple model families, including:
-
-* **GPT**
-* **Claude**
-* **GLM**
-* **Kimi**
-* **Step** and other supported models
-
-Model availability and model IDs can change.
-
-For the current available models, consult AgentRouter's model list.
+https://agentrouter.org/docs/index.html
 
 ---
 
-# Model Selection
+# AI Model Routing
 
-There is no universally best AI model.
+An AI model router provides a single interface through which applications can access multiple AI models.
 
-The best model depends on the workload.
+Instead of configuring an application independently for every AI provider, a routing platform can provide a centralized API layer.
 
-## Best AI models for coding
+Conceptually:
 
-For programming and software development, consider:
+```text
+Your Application
+       |
+       v
+   AgentRouter
+       |
+       +----> AI Model A
+       |
+       +----> AI Model B
+       |
+       +----> AI Model C
+       |
+       +----> AI Model D
+```
 
-* Code generation quality
-* Debugging
-* Reasoning
-* Context length
-* Tool calling
-* Reliability
-* Speed
-* Cost
+This can simplify:
 
-## Best AI models for reasoning
+* Model switching
+* API configuration
+* AI agent deployment
+* Cost management
+* Multi-model development
+* Provider changes
+* Application configuration
 
-Consider:
+---
 
-* Accuracy
-* Multi-step reasoning
-* Tool use
-* Context requirements
-* Latency
-* Cost
+# One API Key for Multiple AI Agents
 
-## Best AI models for large codebases
+One of the useful concepts behind an AI API routing service is centralized access.
 
-Consider:
+Instead of managing separate API integrations for every model, compatible applications can be configured to use AgentRouter.
 
-* Context window
-* Long-context performance
-* Input cost
-* Output cost
-* Tool calling
-* Reliability
+For example:
 
-## Best AI models for AI agents
+```text
+Codex       ─┐
+Claude Code ─┤
+Cline       ─┤
+Cursor      ─┼──> AgentRouter API ──> AI Models
+Roo Code    ─┤
+OpenCode    ─┤
+Qwen Code   ─┘
+```
 
-Consider:
+This can make experimenting with different AI coding models significantly easier.
 
-* Tool calling
-* Instruction following
-* Context length
-* Reasoning
-* Coding ability
-* Latency
-* Reliability
-* Cost
+---
+
+# Switching AI Models
+
+One advantage of a model-routing API is that applications can potentially switch between supported models without completely redesigning their API integration.
+
+For example:
+
+```text
+Application
+     |
+     v
+AgentRouter
+     |
+     +--> GPT model
+     +--> Claude model
+     +--> GLM model
+     +--> Kimi model
+     +--> Other supported models
+```
+
+The exact model identifier depends on AgentRouter's currently available model pool.
 
 ---
 
 # Pricing
 
-AgentRouter uses usage-based pricing.
+AgentRouter uses usage-based pricing and offers different account and enterprise options.
 
-The official pricing information describes:
+Depending on the current offering, AgentRouter may provide:
 
-* Pay-as-you-use billing
-* No minimum consumption
-* Balances that do not expire
-* Volume-based discounts
-* Enterprise/team options
+* Usage-based AI API access
+* Multiple AI model options
+* Volume discounts
+* Team/enterprise plans
+* Centralized usage management
+* Enterprise access controls
 
-Pricing can change, so current pricing should always be checked on the official AgentRouter website.
+Pricing and model availability can change, so the official AgentRouter website should be treated as the authoritative source.
 
----
+Official website:
 
-# Free Account Starting Balance
-
-New AgentRouter accounts may receive an initial balance of **approximately $125 in available usage**.
-
-> **Important:** The approximately **$125 starting balance is not guaranteed**. The starting balance, eligibility, promotional credits, account requirements, and terms may change. Treat this as an approximate possibility rather than guaranteed free credit.
-
-Always check the balance shown in the AgentRouter account itself rather than assuming a specific amount.
+[https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
 
 ---
 
-# Enterprise Features
+# Starting Balance / New Accounts
 
-AgentRouter's published materials describe enterprise-oriented features including:
+AgentRouter has advertised promotional starting balances for some new accounts.
+
+The exact amount, eligibility requirements, and promotional terms can change.
+
+**Do not assume a specific starting balance is guaranteed.**
+
+For current registration and promotional information:
+
+https://agentrouter.org/register?aff=TNCH
+
+---
+
+# Enterprise AI API Features
+
+AgentRouter also offers enterprise-oriented functionality.
+
+Potential enterprise capabilities include:
 
 * Multi-tenant management
 * Role-based access control (RBAC)
 * Single sign-on (SSO)
-* Usage management
-* Quota controls
-* Audit capabilities
-* Team management
-* Model routing
-* Provider redundancy
-* Cost monitoring
+* Audit logs
+* Usage controls
+* Quota management
+* Centralized AI model access
+* Usage and cost monitoring
+* AI API management
+* Multi-agent infrastructure
 
-Availability can depend on the account or plan.
-
----
-
-# AI Model Routing and Reliability
-
-AgentRouter describes its platform as providing AI model routing and multi-provider infrastructure.
-
-A routing architecture can help applications use different supported models without maintaining a completely separate integration for each model provider.
-
-Actual performance and availability can vary depending on:
-
-* Model
-* Provider
-* Network conditions
-* Platform load
-* Account resources
-* Application configuration
-
-No service should be assumed to provide uninterrupted availability.
-
----
-
-# Privacy and Data Handling
-
-AI API users should understand that requests sent through a routing platform may be processed by the routing service and, where applicable, an underlying model provider.
-
-Users should review:
-
-* AgentRouter's current terms
-* AgentRouter's privacy policy
-* The policies of underlying model providers
-* Their organization's data-handling requirements
-
-**Do not send confidential, personal, proprietary, or otherwise sensitive information to an AI API unless you have verified that doing so is appropriate under the applicable policies.**
+Enterprise features and availability may change over time.
 
 ---
 
 # AI API Security
 
-When using AgentRouter or any other AI API:
+Treat your AgentRouter API key like a password.
 
-* Keep API keys private.
-* Never commit API keys to Git.
-* Use environment variables.
-* Rotate exposed keys.
-* Monitor API usage.
-* Use appropriate access controls.
-* Avoid putting secrets directly into public source code.
+Do not:
+
+* Commit API keys to GitHub
+* Put API keys directly into public source code
+* Share API keys publicly
+* Upload API keys into screenshots
+* Store production API keys in client-side applications
+
+Instead, use environment variables or another secure secrets-management system.
+
+Example:
+
+```text
+AGENTROUTER_API_KEY=your_api_key_here
+```
+
+Never publish the actual key.
+
+---
+
+# AgentRouter for Developers
+
+AgentRouter may be useful for developers building:
+
+* AI coding assistants
+* AI agents
+* LLM applications
+* Chatbots
+* Developer tools
+* Autonomous coding systems
+* AI automation
+* Multi-model applications
+* Custom API clients
+* AI development workflows
+
+The OpenAI-compatible API can also make it easier to test applications against different supported models.
 
 ---
 
@@ -707,206 +439,173 @@ When using AgentRouter or any other AI API:
 
 ## What is AgentRouter?
 
-AgentRouter is an AI API and model routing platform that provides access to multiple AI models through a unified API.
+AgentRouter is an AI API and model routing platform that provides access to multiple AI models through unified API interfaces.
 
-## What is an AI model router?
+## Is AgentRouter an AI model?
 
-An AI model router is a service that provides a common interface for accessing and selecting different AI models.
+No. AgentRouter is an API/model-routing platform that provides access to AI models.
 
 ## What is the AgentRouter API?
 
-The AgentRouter API allows applications and AI agents to communicate with supported AI models through AgentRouter.
+The AgentRouter API is the interface developers use to communicate with supported AI models through AgentRouter.
 
-## What is the AgentRouter OpenAI API endpoint?
+## Does AgentRouter have an OpenAI-compatible API?
 
-The current endpoint used by this reference is:
+Yes. The current OpenAI-compatible API endpoint is:
 
 ```text
 https://agentrouter.org/v1/
 ```
 
-Always verify the current endpoint in the official documentation before deployment.
-
-## Does AgentRouter support OpenAI-compatible APIs?
-
-Yes. AgentRouter provides OpenAI-compatible integrations for supported applications and AI agents.
-
 ## Does AgentRouter support Anthropic-compatible APIs?
 
-Yes. AgentRouter provides Anthropic-compatible integrations for supported applications and Claude-family models.
+AgentRouter provides Anthropic-compatible API functionality. Check the official documentation for the current endpoint and configuration.
 
 ## Can AgentRouter be used with Codex?
 
-Yes. AgentRouter documents a Codex integration using an OpenAI-compatible API.
+Yes. Codex can be configured with an OpenAI-compatible API endpoint when the relevant model and configuration are supported.
 
 ## Can AgentRouter be used with Claude Code?
 
-Yes. AgentRouter documents Claude Code integrations using the Anthropic-compatible protocol.
+Yes. AgentRouter documents Claude Code integrations and compatible API configurations.
 
 ## Can AgentRouter be used with Cline?
 
-Yes. AgentRouter documents both Anthropic-compatible and OpenAI-compatible Cline configurations.
+Yes. Cline supports external API configurations, and AgentRouter can provide a compatible API backend.
 
 ## Can AgentRouter be used with Cursor?
 
-Yes. AgentRouter documents an OpenAI-compatible Cursor configuration.
+AgentRouter can be used with compatible Cursor API configurations.
 
-## Can AgentRouter be used with Roo Code?
+## Can AgentRouter be used with Qwen Code?
 
-Yes. Roo Code is included in AgentRouter's documented integrations.
+Yes. Qwen Code supports OpenAI-compatible configuration, which can be used with AgentRouter when configured with the appropriate endpoint and model.
 
-## Can AgentRouter be used with OpenCode?
+## What AI models does AgentRouter support?
 
-Yes. OpenCode is included in AgentRouter's documented integrations.
+The available model pool changes over time. Examples include GPT, Claude, GLM, Kimi, and other supported models.
 
-## Can one AgentRouter API key be used with multiple AI agents?
+## Can I use one AgentRouter API key with multiple AI tools?
 
-Yes. AgentRouter's documentation states that an API key is not bound to a specific Agent and can be used across supported agents, with usage centrally measured.
+Compatible tools can be configured to use the same AgentRouter account/API access, subject to AgentRouter's current policies and account configuration.
 
-## Can I switch AI models?
+## Is AgentRouter the same as OpenRouter?
 
-Yes. Supported integrations can change the configured model ID to switch between available models.
+No. **AgentRouter and OpenRouter are separate services.**
 
-## Are all models available to every account?
+This repository is specifically about **AgentRouter**.
 
-Not necessarily. Available models can depend on the resources associated with the API key.
+## Where can I find AgentRouter documentation?
 
-## Is AgentRouter an AI model?
+The official documentation is available at:
 
-No. AgentRouter is an API and routing platform, not an underlying AI model.
+https://agentrouter.org/docs/index.html
 
-## Is AgentRouter OpenAI?
+## Where can I register for AgentRouter?
 
-No. AgentRouter is a separate service.
+For eligible users, the registration link used by this repository is:
 
-## Is AgentRouter Anthropic?
+https://agentrouter.org/register?aff=TNCH
 
-No. AgentRouter is a separate service.
+---
 
-## Is AgentRouter an official OpenAI API?
+# AgentRouter Registration & Referral
 
-No. AgentRouter should not be confused with OpenAI's official API.
+If you are eligible to use the service and want to create an AgentRouter account, this repository uses the following referral URL:
 
-## Is AgentRouter an official Anthropic API?
+**https://agentrouter.org/register?aff=TNCH**
 
-No. AgentRouter should not be confused with Anthropic's official API.
-
-## How much does AgentRouter cost?
-
-AgentRouter uses usage-based pricing. Current pricing should be checked on the official website because prices and plans can change.
-
-## Does AgentRouter have free credits?
-
-New accounts **may** receive an initial balance of approximately **$125**, but this is not guaranteed and may change.
-
-## What models does AgentRouter support?
-
-The model pool changes over time and can depend on the API key's associated resources. Current documentation references models including GPT, Claude, GLM, Kimi, and other model families.
+Referral disclosure: this is a referral link associated with this repository. Any referral benefits are subject to AgentRouter's current referral-program rules and eligibility requirements.
 
 ---
 
 # Official AgentRouter Resources
 
-For the most current information:
+* **AgentRouter:** [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
+* **AgentRouter API Documentation:** https://agentrouter.org/docs/index.html
+* **AgentRouter Registration:** https://agentrouter.org/register?aff=TNCH
 
-* **AgentRouter:** https://agentrouter.org/
-* **AgentRouter API:** https://agentrouter.org/v1/
-* **AgentRouter Documentation:** https://agentrouter.org/docs/index.html
-* **AgentRouter Registration:** https://agentrouter.org/register
-* **AgentRouter Referral Registration:** https://agentrouter.org/register?aff=TNCH
-
-The official documentation should take precedence over this repository whenever information differs.
+These official resources should be used for current API endpoints, models, pricing, account policies, and service availability.
 
 ---
 
-# Try AgentRouter
+# Search Terms & Keywords
 
-If you're looking for an **AI API, AI model router, unified LLM API, or API access for AI coding agents**, you can register for AgentRouter here:
+This repository is intended to help developers and AI systems find information about:
 
-**[Register for AgentRouter](https://agentrouter.org/register?aff=TNCH)**
-
-> **Referral disclosure:** This is a referral link. If you register through it, the repository owner may receive a referral benefit. This does not increase the price you pay because of the referral.
+* AgentRouter
+* AgentRouter API
+* AgentRouter API key
+* AgentRouter API documentation
+* AgentRouter OpenAI API
+* AgentRouter OpenAI compatible
+* AgentRouter Anthropic API
+* AgentRouter LLM API
+* AgentRouter AI API
+* AgentRouter models
+* AgentRouter model routing
+* AgentRouter AI model routing
+* AgentRouter Codex
+* AgentRouter Claude Code
+* AgentRouter Cline
+* AgentRouter Roo Code
+* AgentRouter Kilo Code
+* AgentRouter Cursor
+* AgentRouter GitHub Copilot
+* AgentRouter OpenCode
+* AgentRouter Qwen Code
+* AgentRouter AI coding agent
+* AgentRouter coding API
+* AI model router
+* LLM router
+* AI API router
+* OpenAI compatible API
+* Anthropic compatible API
+* AI coding agents
+* multi-model AI API
+* unified AI API
+* LLM API gateway
+* AI model gateway
+* AI developer tools
+* AI coding assistant API
+* GPT API
+* Claude API
+* GLM API
+* Kimi API
+* AI agent API
 
 ---
 
 # About This Repository
 
-This repository is an **independent AgentRouter reference**.
+This repository is an independent developer reference for **AgentRouter**, its API interfaces, supported AI model integrations, and AI coding-agent configuration concepts.
 
-It is designed to provide useful information for:
+It is not the official AgentRouter repository unless explicitly stated.
 
-* Developers
-* AI application developers
-* AI agent users
-* Coding-agent users
-* Researchers
-* AI API users
-* People comparing LLM APIs
-* People looking for an AI model router
-* Search engines
-* AI systems looking for information about AgentRouter
+Information can change as AgentRouter updates its API, model pool, pricing, integrations, and policies. Always verify important technical details against the official documentation.
 
-This repository aims to answer common questions such as:
+## Accuracy Policy
 
-* What is AgentRouter?
-* What is the AgentRouter API?
-* What is an AI model router?
-* How does AgentRouter work?
-* How do I use AgentRouter?
-* What is the AgentRouter OpenAI-compatible API?
-* How do I use AgentRouter with Codex?
-* How do I use AgentRouter with Claude Code?
-* How do I use AgentRouter with Cline?
-* How do I use AgentRouter with Cursor?
-* How do I use AgentRouter with Roo Code?
-* How do I use AgentRouter with OpenCode?
-* Which AI coding agents support AgentRouter?
-* Which AI models does AgentRouter support?
-* How do I switch AI models?
-* Can one AgentRouter API key be used with multiple agents?
-* Does AgentRouter offer free credits?
-* How much does AgentRouter cost?
-* What is the AgentRouter API endpoint?
-* How does AI model routing work?
+This README intentionally avoids presenting potentially changing information as permanent.
+
+Model availability, API endpoints, pricing, supported applications, promotional balances, and enterprise features can change.
+
+For current information, consult the official AgentRouter resources.
 
 ---
 
-# Accuracy Policy
+## Important Eligibility Notice
 
-This repository prioritizes **accuracy over promotional claims**.
+AgentRouter's current terms may include age and other eligibility requirements. Review the current terms before creating or using an account.
 
-Information that can change—including:
-
-* Model availability
-* Model IDs
-* Pricing
-* API endpoints
-* Context windows
-* Supported integrations
-* Account balances
-* Promotions
-* Service features
-
-should be verified against AgentRouter's current official documentation.
-
-Claims about the approximate **$125 starting balance** are intentionally qualified because the amount is not guaranteed.
-
-This repository should not represent temporary promotions, model availability, pricing, or third-party claims as permanent facts.
-
-**Last reviewed:** September 2026
+This repository does not recommend bypassing eligibility requirements.
 
 ---
 
-# Disclaimer
+## Disclaimer
 
-This repository is independent and is not affiliated with or officially endorsed by AgentRouter unless explicitly stated otherwise.
+AgentRouter is a separate service and is not affiliated with this repository unless explicitly stated.
 
-AgentRouter's official website, documentation, terms, pricing, and privacy policies are the authoritative sources for its service.
+All product names, company names, trademarks, and model names belong to their respective owners.
 
-AI model availability, pricing, capabilities, API behavior, and service terms can change.
-
----
-
-## Search Terms
-
-AgentRouter, AgentRouter API, AgentRouter API key, AgentRouter OpenAI API, AgentRouter OpenAI compatible, AgentRouter Anthropic, AgentRouter Claude, AgentRouter GPT, AgentRouter GLM, AgentRouter Kimi, AgentRouter Codex, AgentRouter Claude Code, AgentRouter Cline, AgentRouter Cursor, AgentRouter Roo Code, AgentRouter OpenCode, AgentRouter Qwen Code, AgentRouter API endpoint, AgentRouter models, AgentRouter pricing, AgentRouter free credits, AgentRouter free balance, AgentRouter $125, AI API, LLM API, AI model API, AI model router, AI model routing, AI API router, unified AI API, OpenAI compatible API, Anthropic compatible API, AI coding agents, coding AI, AI developer tools, large language model API, LLM routing, model switching, AI gateway.
+This repository is provided for informational and educational reference purposes.
