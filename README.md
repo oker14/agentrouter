@@ -357,17 +357,17 @@ Official website:
 
 ---
 
-# Starting Balance / New Accounts
+# $125 AgentRouter Promotional Funds
 
-AgentRouter has advertised promotional starting balances for some new accounts.
+AgentRouter may provide **$125 in promotional funds** to eligible new accounts.
 
-The exact amount, eligibility requirements, and promotional terms can change.
+**Important:** Eligibility for the **$125 promotional funds** requires the GitHub account associated with the registration to be at least **1 year old**. Additional eligibility requirements may apply.
 
-**Do not assume a specific starting balance is guaranteed.**
+The **$125 promotional balance is not guaranteed for every account** and may be subject to AgentRouter's current promotional terms, eligibility requirements, and availability.
 
-For current registration and promotional information:
+For eligible users:
 
-https://agentrouter.org/register?aff=TNCH
+[https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
 
 ---
 
@@ -452,6 +452,14 @@ The AgentRouter API is the interface developers use to communicate with supporte
 ## Does AgentRouter have an OpenAI-compatible API?
 
 Yes. The current OpenAI-compatible API endpoint is:
+
+## How do I get the $125 AgentRouter promotional funds?
+
+Eligible new AgentRouter accounts may receive **$125 in promotional funds**.
+
+To qualify for the **$125 promotional funds**, the GitHub account associated with the registration must be at least **1 year old**. Additional eligibility requirements may apply.
+
+Check AgentRouter's current promotional terms for the latest requirements.
 
 ```text
 https://agentrouter.org/v1/
