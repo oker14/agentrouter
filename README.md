@@ -1,5 +1,7 @@
 # AgentRouter — $125 Free AI API Credits, AI Model Routing & API Guide
 
+<meta name="google-site-verification" content="Ngs9XQ2McAq0MfdDEDM7LRFhRIr-Yr2iCxCsjCGAqHE" />
+
 🚀 Get $175 in AgentRouter promotional credits
 Register with the referral link [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
 
