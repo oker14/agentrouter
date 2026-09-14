@@ -1,5 +1,8 @@
 # AgentRouter $125 Promotional Funds
 
+🚀 Get $175 in AgentRouter promotional credits
+Register with the referral link [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
+
 This page is an independent reference for people searching for information about **AgentRouter promotional funds**, including the commonly reported **$125 promotional balance** for eligible new accounts.
 
 > **Important:** Promotional amounts, eligibility rules, and availability can change. Verify the current terms with AgentRouter before relying on any promotion.
