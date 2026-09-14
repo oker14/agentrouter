@@ -1,5 +1,8 @@
 AgentRouter API Guide
 
+🚀 Get $175 in AgentRouter promotional credits
+Register with the referral link [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
+
 This page is an independent reference for developers looking for information about the AgentRouter API, AI model routing, OpenAI-compatible APIs, GLM APIs, and compatibility with AI coding tools.
 
 AgentRouter Website
