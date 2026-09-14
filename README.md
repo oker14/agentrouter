@@ -1,5 +1,8 @@
 # AgentRouter — $125 Free AI API Credits, AI Model Routing & API Guide
 
+🚀 Get $125 in AgentRouter promotional credits
+Register with the referral link [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
+
 **AgentRouter** is an AI API and model routing platform providing access to multiple large language models (LLMs) through unified APIs.
 
 This guide explains **what AgentRouter is, how AgentRouter's $125 promotional funds work, GitHub account eligibility, AgentRouter API access, OpenAI-compatible APIs, Anthropic-compatible APIs, and AI coding-agent integrations.**
