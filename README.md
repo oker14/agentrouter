@@ -10,7 +10,7 @@ This guide explains **what AgentRouter is, how AgentRouter's $125 promotional fu
 ## AgentRouter $125 Promotional Funds
 
 Eligible users may receive **$125 in AgentRouter promotional funds** when signing up through an eligible registration.
-
+google-site-verification: google70db5b0dfd9a22c5.html
 GitHub account age may be part of the eligibility requirements. Check the current promotion terms for the exact requirements.
 
 [https://agentrouter.org](https://agentrouter.org/register?aff=TNCH)
@@ -630,3 +630,6 @@ AgentRouter is a separate service and is not affiliated with this repository unl
 All product names, company names, trademarks, and model names belong to their respective owners.
 
 This repository is provided for informational and educational reference purposes.
+
+[google70db5b0dfd9a22c5.html](https://github.com/user-attachments/files/32176503/google70db5b0dfd9a22c5.html)
+google-site-verification: google70db5b0dfd9a22c5.html
